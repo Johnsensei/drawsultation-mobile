@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "drawsultation-mobile",
+    "slug": "drawsultation-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "drawsultation-mobile"
+}
