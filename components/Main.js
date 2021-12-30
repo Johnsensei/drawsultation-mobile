@@ -12,10 +12,10 @@ const Main = () => {
         {/* Share Modal will go here. */}
 
         {/* Draw Pad */}
-        {/* <View
+        <View
         style={styles.drawPad}
 
-        /> */}
+        />
         
         {/* Buttons */}
         {/* <View style={styles.sideButtonsContainer}> */}
@@ -52,17 +52,17 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#000',
-        
     },
 
     drawPad: {
-        width: 600,
-        height: 600,
+        width: 300,
+        height: 300,
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#ccc',
-        marginTop: 5,
+        // marginTop: 50,
         backgroundColor: '#fff',
     },
 
