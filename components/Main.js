@@ -89,7 +89,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        borderRadius: 4,
+        borderTopLeftRadius: 4,
+        borderTopRightRadius: 4,
     },
 
     sideLogo: {
