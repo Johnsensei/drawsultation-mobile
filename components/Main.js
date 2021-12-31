@@ -1,11 +1,12 @@
 import React, { useEffect, useCallback, useState} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import * as ScreenOrientation from 'expo-screen-orientation';
 
 import Logo from '../img/drawsultation.png';
 
 const Main = () => {
 
-
+  
 
   return (
     <View style={styles.mainContainer}>
@@ -18,15 +19,17 @@ const Main = () => {
         />
         
         {/* Buttons */}
-        {/* <View style={styles.sideButtonsContainer}> */}
+        <View style={styles.sideButtonsContainer}>
 
-            {/* <View style={styles.sideLogoContainer}>
+            <View style={styles.sideLogoContainer}>
                 <Image
                     source={Logo}
                     alt='Drawsultation logo'
                     style={styles.sideLogo}
+                    // resizeMethod='resize'
+                    // resizeMode='contain'
                 />
-            </View> */}
+            </View>
 
             {/* Pen width buttons */}
             {/* <View style={styles.penButtonContainer}>
@@ -34,7 +37,7 @@ const Main = () => {
 
             </View> */}
 
-        {/* </View> */}
+        </View>
         
 
         
@@ -42,17 +45,23 @@ const Main = () => {
     </View>
   );
 
+  
 
 }
 // End Main code
+
+
 
 //Styling on Main
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
         flexDirection: 'row',
+        // flexDirection: 'column',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
+        alignContent: 'center',
         backgroundColor: '#000',
     },
 
@@ -62,7 +71,6 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#ccc',
-        // marginTop: 50,
         backgroundColor: '#fff',
     },
 
@@ -73,10 +81,11 @@ const styles = StyleSheet.create({
     },
 
     sideLogoContainer: {
-        width: 96,
+        width: 300,
         backgroundColor: '#26AAE1',
-        paddingTop: 1.5,
-        paddingBottom: 1.5,
+        // paddingTop: 100,
+        // paddingBottom: 1.5,
+        // padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
@@ -84,7 +93,10 @@ const styles = StyleSheet.create({
     },
 
     sideLogo: {
-        width: 90,
+        // width: 'auto',
+        width: 290,
+        // padding: 100,
+        resizeMode: 'contain'
     },
 
     penButtonContainer: {

@@ -3,6 +3,9 @@
     "name": "drawsultation-mobile",
     "slug": "drawsultation-mobile",
     "version": "1.0.0",
+    "ios": {
+      "requireFullScreen": true
+    },
     "assetBundlePatterns": [
       "**/*"
     ]
